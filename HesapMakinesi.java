@@ -7,7 +7,7 @@ public class HesapMakinesi {
 		int toplam=0;
 		System.out.print("Sayi Gir: ");	
 		int sayi1=scan.nextInt();
-        
+
 		System.out.print("Yapilacak islem: ");
 		a=scan.next();
 
@@ -19,6 +19,25 @@ public class HesapMakinesi {
 				toplam=sayi1+sayi2;
 				System.out.println("Sonuc:"+toplam);
 				break;
+            case "-":
+				toplam=sayi1-sayi2;
+				System.out.println("Sonuc:"+toplam);
+				break;
+				
+			case "*":
+				toplam=sayi1*sayi2;
+				System.out.println("Sonuc:"+toplam);
+				break;
+				
+            case "/":
+                if(sayi2!=0){
+                    toplam=sayi1/sayi2;
+                }else{
+                    System.out.println("Bir Sayi Sıfıra Bolunemez!");
+                    break;
+                }
+                    System.out.println("Sonuc:"+toplam);
+                    break;
 		}
 	}
 
