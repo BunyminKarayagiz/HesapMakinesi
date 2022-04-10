@@ -29,10 +29,15 @@ public class HesapMakinesi {
 				System.out.println("Sonuc:"+toplam);
 				break;
 				
-			case "/":
-				toplam=sayi1/sayi2;
-				System.out.println("Sonuc:"+toplam);
-				break;
+            case "/":
+                if(sayi2!=0){
+                    toplam=sayi1/sayi2;
+                }else{
+                    System.out.println("Bir Sayi Sıfıra Bolunemez!");
+                    break;
+                }
+                    System.out.println("Sonuc:"+toplam);
+                    break;
 		}
 	}
 
